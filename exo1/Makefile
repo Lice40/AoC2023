@@ -1,5 +1,5 @@
 FLAGS := -o
-NAME := test
+NAME := exo1
 CC := g++
 DEBUG := -fsanitize=address -g
 
