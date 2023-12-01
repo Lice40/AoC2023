@@ -24,7 +24,7 @@ main.o: main.cpp
 	@$(CC) -c main.cpp $(DEBUG)
 	
 
-#tils.o: utils.cpp
+utils.o: utils.cpp
 	@$(CC) -c utils.cpp $(DEBUG)
 
 clean:
