@@ -15,14 +15,13 @@ def process_game(line:str, cps, idx):
     datas:list(str) = line.split("|")
     guess = remove_items(datas[0].split(' '), '')
     winning_numbers = remove_items(datas[1].split(' '),'')
-    for i in range(0,cps):
         wins = 0
         for number in guess:
             if number in winning_numbers:
                 wins +=1
         for number in range(idx+1, idx+wins+1):
             if(number < len(lines)):
-                copies[number]+=1
+                copies[number]+=cps
 
 #démarage du programme
 if __name__ == '__main__':
