@@ -1,4 +1,4 @@
-with open("day_04.in") as fin:
+with open("./day_04.in") as fin:
     data = fin.read()
     lines = data.strip().split("\n")
 
